@@ -8,7 +8,7 @@
     "e2e_server": "node ./tests_e2e/server/server.js",
     "e2e_test": "nightwatch",
     "build": "brunch build",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "body-parser": "^1.15.2",

@@ -140,7 +140,7 @@
 
   Locflow.Element = Element;
   Locflow.era.argumentType = argumentType;
-  Locflow.elm = Locflow.era.element = function(selector) {
+  Locflow.elm = Locflow.era.element = window.elm = function(selector) {
     return new Element(selector);
   }
 

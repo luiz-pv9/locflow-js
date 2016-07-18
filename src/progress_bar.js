@@ -7,7 +7,18 @@
 
     ANIMATION_DURATION = 300;
 
-    ProgressBar.defaultCSS = ".locflow-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  background: #0076ff;\n  z-index: 9999;\n  transition: width " + ANIMATION_DURATION + "ms ease-out, opacity " + (ANIMATION_DURATION / 2) + "ms " + (ANIMATION_DURATION / 2) + "ms ease-in;\n  transform: translate3d(0, 0, 0);\n}";
+    ProgressBar.defaultCSS = `
+      .locflow-progress-bar {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: #0076ff;
+        z-index: 9999;
+        transition: width ${ANIMATION_DURATION}ms ease-out, opacity ${ANIMATION_DURATION / 2}ms ${ANIMATION_DURATION/2}ms ease-in;
+        transform: translate3d(0, 0, 0);
+      }`;
 
     function ProgressBar() {
       this.trickle = bind(this.trickle, this);
