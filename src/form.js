@@ -15,6 +15,9 @@
         let element = this.form.elements[i];
         this.serializeInput(element);
       }
+      if(this.form.hasAttribute('data-format')) {
+        this.serialized['_format'] = this.form.getAttribute('data-format');
+      }
       return this.serialized;
     }
 

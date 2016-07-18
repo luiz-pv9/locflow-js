@@ -37,6 +37,12 @@ describe('Locflow.Form specs', () => {
   });
 
   describe('#serialize', () => {
+    it('appends _format', () => {
+      let form = createForm(``);
+      Locflow.elm(form.form).data('format', 'javascript');
+      expect(form.serialize()).to.eql({_format: 'javascript'});
+    });
+
     it('text input', () => {
       let form = createForm(`
         <input name="name" value="Luiz Vasconcellos" />
