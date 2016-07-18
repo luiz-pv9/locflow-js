@@ -1,0 +1,31 @@
+{
+  "name": "locflow",
+  "description": "Rich web apps with ease",
+  "version": "0.0.1",
+  "main": "public/locflow.js",
+  "scripts": {
+    "test": "karma start",
+    "e2e_server": "node ./tests_e2e/server/server.js",
+    "e2e_test": "nightwatch",
+    "build": "brunch build",
+    "prepublish": "npm run build",
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "brunch": "^2.8.2",
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "javascript-brunch": "^2.0.0",
+    "karma": "^1.1.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-sinon": "^1.0.5",
+    "laravel-elixir": "^6.0.0-8",
+    "mocha": "^2.5.3",
+    "nightwatch": "^0.9.5",
+    "sinon": "^1.17.4"
+  }
+}

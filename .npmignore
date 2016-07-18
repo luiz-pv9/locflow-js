@@ -1,0 +1,7 @@
+src
+tests
+tests_e2e
+node_modules
+bin
+*.swo
+*.swp
